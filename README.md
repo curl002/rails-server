@@ -1,24 +1,53 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Install the gems required by the project:
 
-Things you may want to cover:
+```
+bundle install
+```
 
-* Ruby version
+Add your local PostgreSQL password:
+```
+POSTGRES_PASSWORD=your_postgresql_password
+```
 
-* System dependencies
+Make sure PostgreSQL is installed and running locally. The application expects a PostgreSQL user named:
+```
+postgres
+```
 
-* Configuration
+From the Rails project directory, run:
+```
+rails db:create
+```
 
-* Database creation
+You should see confirmation that the databases were created:
+```
+Created database 'website'
+Created database 'game_accounts'
+```
 
-* Database initialization
+Run:
+```
+rails db:migrate
+```
 
-* How to run the test suite
+Start the Rails development server:
+```
+rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+The API will start on:
+```
+http://localhost:3000
+```
 
-* Deployment instructions
+Open the following URL in a browser:
+```
+http://localhost:3000
+```
 
-* ...
+You should see: 
+```
+API is listening
+```

@@ -48,3 +48,30 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
+
+# -- Project gems
+# Authentication — user registration, login, password management, etc.
+gem "devise"
+
+# JWT authentication — issue and validate JSON Web Tokens for API authentication
+gem "devise-jwt"
+
+# Role-based authorization — manage roles and permissions for users
+gem "rolify"
+
+# Request throttling and protection against abuse
+gem "rack-attack"
+
+# PostgreSQL database adapter for Ruby/Rails
+gem "pg"
+
+group :development, :test do
+  # Testing framework for writing and running application specs
+  gem "rspec-rails"
+
+  # Test factories — create users and other test data easily
+  gem "factory_bot_rails"
+end
+
+# Later if needed
+# gem "paper_trail"
