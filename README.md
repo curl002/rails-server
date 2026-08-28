@@ -42,12 +42,7 @@ The API will start on:
 http://localhost:3000
 ```
 
-Open the following URL in a browser:
-```
-http://localhost:3000
-```
-
-You should see: 
+When this URL is opened in a browser you should see: 
 ```
 API is listening
 ```
